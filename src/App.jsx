@@ -27,8 +27,8 @@ const App = () => {
     <main>
       <h1>Burger Stacker</h1>
       <section>
-        <IngredientList availableIngredients={availableIngredients} addToBurger={setStack} stack ={stack}/> 
-        <BurgerStack />
+        <IngredientList availableIngredients={availableIngredients} addToBurger={setStack} stack={stack}/> 
+        <BurgerStack stack={stack} removeFromBurger={setStack}/>
       </section>
     </main>
   );

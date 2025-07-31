@@ -2,7 +2,7 @@
 
 const IngredientList = (props) => {
     const handleAddToBurger = (ingredient) => {
-        console.log(ingredient.name)
+        props.addToBurger([...props.stack, ingredient])
     }
 
     return <ul>
