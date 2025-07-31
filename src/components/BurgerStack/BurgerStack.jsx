@@ -12,7 +12,7 @@ const BurgerStack = (props) => {
                 style={{backgroundColor: ingredient.color}}
                 >
                     {ingredient.name} 
-                    <button onClick={() => handleRemoveFromBurger(ingredient)}>-</button>
+                    <button onClick={() => handleRemoveFromBurger(ingredient)}>x</button>
             </li>)
         })}
     </ul>;
