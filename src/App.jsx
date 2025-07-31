@@ -21,13 +21,13 @@ const App = () => {
     { name: 'Swiss Cheese', color: '#F1E1A8' },
   ];
 
-  const [stack, setStack] = useState()
+  const [stack, setStack] = useState([])
 
   return (
     <main>
       <h1>Burger Stacker</h1>
       <section>
-        <IngredientList /> 
+        <IngredientList availableIngredients={availableIngredients} addToBurger={setStack} stack ={stack}/> 
         <BurgerStack />
       </section>
     </main>
